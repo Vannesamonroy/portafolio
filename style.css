@@ -68,7 +68,9 @@ a:hover {
     cursor:default
 }
 
-
+.justificado {
+  text-align: justify;
+}
 /* Menu Hamburguesa */
 
 #hamburger-nav {
