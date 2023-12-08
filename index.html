@@ -4,44 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
-    <!-- Nav version escritorio -->
-    <nav id="desktop-nav">
-      <div class="logo">Vanessa Monroy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Nav version mobile  -->
-    <nav id="hamburger-nav">
-      <div class="logo">Vanessa Monroy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class = "container">
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Vannesa Monroy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      </nav>
       </div>
-    </nav>
+
+    
+      <!--termina barra de navegacion
 
     <!-- Section Profile -->
-    <section id="profile">
+    <section class="container" id="profile">
       <div class="section__pic-container">
-        <img src="./assets/yo.png" alt="Vanessa profile picture" />
+        <img src="./assets/fot_redonda_grande.png" alt="Vanessa profile picture" style="max-width: 150%; height: auto; display: block;" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -50,7 +52,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/CURRICULUM.pdf')"
           >
             Download CV
           </button>
@@ -76,13 +78,13 @@
     </section>
 
     <!-- Section About -->
-    <section id="about">
+    <section  class = "container" id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/yo_ultima.png"
             class="about-pic"
             alt=" Profile Picture"
           />
@@ -98,7 +100,7 @@
               <h3>Experience</h3>
               <p>
                 6 + months <br />
-                Learn Code
+                Junior Development
               </p>
             </div>
             <div class="details-container">
@@ -110,20 +112,17 @@
               <h3>Education</h3>
               <p>
                 Student SENA <br />
-                Software deveploment
+                oftware Development
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta,
-              optio numquam vel odio quae, eligendi minima sunt sed dolor hic
-              reiciendis beatae quibusdam, alias fugiat unde? Quisquam molestiae
-              voluptatem atque beatae delectus nulla possimus animi voluptate
-              blanditiis, autem accusantium, commodi maiores sit qui
-              necessitatibus molestias voluptates aspernatur modi iste
-              perferendis quo? Dolorum accusantium vero eligendi quisquam neque
-              veniam minima ipsam error! Temporibus dignissimos illo fugiat.
+                As a dedicated student committed to software development, I find my true passion in turning ideas into
+                innovative digital solutions. My approach transcends programming; I'm determined to merge technology and
+                digital marketing to create impactful experiences. With strong skills in various technologies, I aim to
+                develop products that not only stand out technologically but also effectively connect with the audience
+                through captivating digital strategies
             </p>
           </div>
         </div>
@@ -135,7 +134,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section class="container" id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -269,7 +268,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section class="container" id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -277,12 +276,13 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/vintage-outfits.png"
+                style="height: 100; width: 100%;"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Vintage Outfits</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -292,7 +292,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://vintageoufits.myshopify.com/'"
               >
                 Live Demo
               </button>
@@ -355,7 +355,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section  class = "container" id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -365,7 +365,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:examplemail@gmail.com">diva4172@hotmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -388,9 +388,12 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Vannesa Monroy. All Rights Reserved.</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
 l
